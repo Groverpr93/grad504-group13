@@ -83,6 +83,12 @@ validation, and 15% test data. Historical training edges are included in the
 message-passing graph; future test links are held out from training. The final
 run used `657,698` loans, `50` epochs, and seed `50413`.
 
+Following peer feedback, we also treat the chronological test partition as an
+out-of-time evaluation: the model is trained only on earlier loan activity and
+is evaluated on links that occur later in time. This tests whether the ranking
+generalizes to future applications rather than only recovering randomly held-out
+historical links.
+
 ## 5. Model evaluation
 
 We report AUC, average precision, Hits@5, and NDCG at 5, 10, 15, and 20. NDCG
@@ -184,13 +190,18 @@ expected to reimplement the other's approach.
 
 ## 9. Scalability and deployment discussion
 
-The deployment path is: preprocess a new loan, build its feature vector, score
-candidate partners from frozen embeddings, return the top 10 partner IDs/names,
-then run the gender audit/guardrail. The final run must record training time,
-evaluation time, inference time per loan, throughput, and memory usage. The
-main deployment risks are cold-start loans/partners, changing partner coverage,
-missing MPI values, historical popularity bias, and fairness trade-offs that
-may reduce ranking quality.
+Deployment is feasible as a batch recommendation service. On a daily or weekly
+cadence, newly observed loan-partner links can be added to a stored graph
+snapshot, and the model can be retrained or its embeddings refreshed from that
+snapshot. Between refreshes, inference can keep referring to the latest stored
+graph relationships and frozen embeddings without rebuilding the full graph for
+each request. For every new application, the service builds one feature vector,
+scores eligible partners, and returns the top 10 recommendations with a target
+of low-second (or faster) latency. The embedding table and graph metadata
+should be kept in memory or a fast feature store; memory usage, throughput, and
+p95 latency should be monitored as the partner catalog grows. Production checks
+must handle cold-start loans/partners, missing MPI values, stale coverage, and
+gender exposure drift, with the guardrail applied and audited at inference time.
 
 ## 10. Lessons learned and peer-review integration
 
@@ -200,8 +211,10 @@ lesson was that a high AUC can coexist with weak top-k NDCG. Another was that
 regional fairness is not interpretable when partner eligibility is geographic,
 so the final fairness claim is limited to gender.
 
-**Peer-review feedback integration:** `[ADD THE SPECIFIC FEEDBACK AND EXPLAIN
-THE RESULTING CHANGE HERE]`.
+**Peer-review feedback integration:** Reviewers asked us to test performance on
+future activity instead of relying only on a random split. We addressed this by
+sorting records by date and using the later 15% as an out-of-time test set,
+while keeping validation and test links out of the training message graph.
 
 ## 11. Contributions and reproducibility
 
