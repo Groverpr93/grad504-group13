@@ -58,20 +58,30 @@ leakage into validation or test embeddings.
 - selection-rate gaps for borrower gender and region, with a 5% maximum gap;
 - guardrail violation rate (target 0%) and elapsed runtime.
 
-The project uses one direct GNN script. It samples 50,000 loans by
-default to make a first run practical; pass `--max-loans 0` for the full CSV.
+The project uses one direct GNN script. The one-epoch JSON files under
+`outputs/evaluation/*epoch1*` are an archived flow check. Use separate
+`full_run` paths for the final experiment so the checkpoint remains
+reproducible.
 
 ```bash
 python -m pip install torch
 python src/gnn_link_pred.py \
   --data-file data/processed/loans_joined.csv \
-  --max-loans 50000 \
+  --max-loans 0 \
   --epochs 20 \
-  --results-file outputs/evaluation/gnn_results.json
+  --model-file outputs/models/gnn_model_full.pt
+
+python src/evaluate_gnn.py \
+  --model-file outputs/models/gnn_model_full.pt \
+  --model-results outputs/evaluation/full_run/model_evaluation.json \
+  --fairness-dir outputs/evaluation/full_run/fairness \
+  --summary-file outputs/evaluation/full_run/benchmark_summary.json \
+  --inference-results outputs/evaluation/full_run/reranked_inference.json
 ```
 
-The GNN script performs core link prediction only. Fairness remains a
-separate secondary phase to add after the ranking model is stable.
+The GNN script performs core link prediction only. The evaluator separately
+reports model metrics and partner-level gender fairness; the current fairness
+layer is measurement-only until an active guardrail is implemented.
 
 Install PyTorch in the project environment. The script prints each training
 epoch and stores the core result in `outputs/evaluation/gnn_results.json`.
