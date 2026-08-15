@@ -69,7 +69,9 @@ python src/gnn_link_pred.py \
   --data-file data/processed/loans_joined.csv \
   --max-loans 0 \
   --epochs 20 \
-  --model-file outputs/models/gnn_model_full.pt
+  --model-file outputs/models/gnn_model_full.pt \
+  --log-file outputs/logs/gnn_training_full.jsonl \
+  --checkpoint-every 5
 
 python src/evaluate_gnn.py \
   --model-file outputs/models/gnn_model_full.pt \
@@ -83,5 +85,7 @@ The GNN script performs core link prediction only. The evaluator separately
 reports model metrics and partner-level gender fairness; the current fairness
 layer is measurement-only until an active guardrail is implemented.
 
-Install PyTorch in the project environment. The script prints each training
-epoch and stores the core result in `outputs/evaluation/gnn_results.json`.
+Install PyTorch in the project environment. The training script prints each
+epoch, appends loss records to `outputs/logs/gnn_training.jsonl`, and saves
+periodic model-state checkpoints. The final checkpoint is then consumed by
+`evaluate_gnn.py`.

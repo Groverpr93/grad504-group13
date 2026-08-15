@@ -15,7 +15,6 @@ from __future__ import annotations
 import argparse
 import csv
 import json
-import math
 import random
 from pathlib import Path
 
@@ -74,7 +73,10 @@ def main() -> None:
     # Command-line options make the experiment easy to repeat.
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data-file", type=Path, default=Path("data/processed/loans_joined.csv"))
-    parser.add_argument("--results-file", type=Path, default=Path("outputs/evaluation/gnn_results.json"))
+    parser.add_argument("--log-file", type=Path, default=Path("outputs/logs/gnn_training.jsonl"),
+                        help="One JSON record per completed epoch")
+    parser.add_argument("--checkpoint-every", type=int, default=5,
+                        help="Save a model-state checkpoint every N epochs")
     parser.add_argument("--model-file", type=Path, default=Path("outputs/models/gnn_model.pt"),
                         help="Checkpoint used by the separate evaluation script")
     parser.add_argument("--max-loans", type=int, default=50000)
@@ -183,6 +185,9 @@ def main() -> None:
 
     # Train BCE on observed links (1) and sampled non-links (0).
     # Repeat the optimization step for the requested number of epochs.
+    args.log_file.parent.mkdir(parents=True, exist_ok=True)
+    args.log_file.write_text("", encoding="utf-8")
+    args.model_file.parent.mkdir(parents=True, exist_ok=True)
     for epoch in range(1, args.epochs + 1):
         optimizer.zero_grad()
         # Compute one embedding for every loan and partner.
@@ -194,16 +199,23 @@ def main() -> None:
         # BCE teaches positive pairs to score high and negative pairs low.
         loss = nn.functional.binary_cross_entropy_with_logits(scores, labels)
         loss.backward(); optimizer.step()
-        print(f"epoch={epoch:03d} loss={loss.item():.4f}")
+        record = {"epoch": epoch, "loss": loss.item()}
+        with args.log_file.open("a", encoding="utf-8") as log:
+            log.write(json.dumps(record) + "\n")
+        print(f"epoch={epoch:03d} loss={loss.item():.4f} | log={args.log_file}")
+        if args.checkpoint_every and epoch % args.checkpoint_every == 0:
+            periodic_file = args.model_file.with_name(
+                f"{args.model_file.stem}_epoch{epoch:03d}{args.model_file.suffix}")
+            torch.save({"model_state": model.state_dict(), "epoch": epoch,
+                        "loss": loss.item(), "seed": args.seed}, periodic_file)
+            print(f"checkpoint written to: {periodic_file}")
 
-    # Evaluate each test partner against future loans only.
-    # Switch off training-specific behavior before scoring test links.
+    # Freeze the final embeddings for the separate evaluation script.
     model.eval()
     with torch.no_grad(): embeddings = model(features, edges)
 
     # Save everything needed by the separate evaluation script. Keeping the
     # split rows and node mappings in the checkpoint makes evaluation repeatable.
-    args.model_file.parent.mkdir(parents=True, exist_ok=True)
     torch.save({"model_state": model.state_dict(), "embeddings": embeddings.cpu(),
                 "loan_id": loan_id, "partner_id": partner_id,
                 "train_rows": train_rows, "validation_rows": rows[train_end:validation_end],
@@ -211,55 +223,6 @@ def main() -> None:
                 "seed": args.seed},
                args.model_file)
     print(f"checkpoint written to: {args.model_file}")
-    # Evaluation is intentionally handled by evaluate_gnn.py. Returning here
-    # prevents the old partner->loan diagnostic block below from being used as
-    # an authoritative result file.
-    return
-    auc_values = []
-    ndcg_values = {k: [] for k in (5, 10, 15, 20)}
-    # Group future positive links by partner for ranking evaluation.
-    test_by_partner = {}
-    for row in test_rows:
-        test_by_partner.setdefault(row["partner"], []).append(row["loan"])
-    future_loans = [row["loan"] for row in test_rows]
-    for partner, positive_loans in test_by_partner.items():
-        # Candidate negatives come from future loans, not training loans.
-        negatives = [loan for loan in future_loans if loan not in positive_loans]
-        negatives = random.sample(negatives, min(len(negatives), max(50, len(positive_loans) * 10)))
-        candidates = [(loan, 1) for loan in positive_loans] + [(loan, 0) for loan in negatives]
-        random.shuffle(candidates)
-        scores = [(embeddings[loan_id[loan]] * embeddings[partner_id[partner]]).sum().item()
-                  for loan, _ in candidates]
-        labels = [label for _, label in candidates]
-        pos_scores = [s for s, y in zip(scores, labels) if y]
-        neg_scores = [s for s, y in zip(scores, labels) if not y]
-        # AUC measures how often a positive receives a higher score than a negative.
-        auc_values.append(sum(float(p > n) + .5 * float(p == n) for p in pos_scores for n in neg_scores) /
-                          max(1, len(pos_scores) * len(neg_scores)))
-        # Sort candidates once, then evaluate the ranked list at several cutoffs.
-        ranked = sorted(range(len(scores)), key=lambda i: scores[i], reverse=True)
-        for k in ndcg_values:
-            order = ranked[:k]
-            dcg = sum(labels[i] / math.log2(j + 2) for j, i in enumerate(order))
-            ideal = sum(1 / math.log2(j + 2) for j in range(min(k, len(pos_scores)))) or 1
-            ndcg_values[k].append(dcg / ideal)
-
-    # Store the headline result in a small JSON file.
-    result = {"loans": len(rows), "nodes": node_count, "train_edges": len(train_rows),
-              "validation_loans": validation_end - train_end, "test_loans": len(test_rows),
-              "test_auc": sum(auc_values) / max(1, len(auc_values)),
-              "test_ndcg_at_5": sum(ndcg_values[5]) / max(1, len(ndcg_values[5])),
-              "test_ndcg_at_10": sum(ndcg_values[10]) / max(1, len(ndcg_values[10])),
-              "test_ndcg_at_15": sum(ndcg_values[15]) / max(1, len(ndcg_values[15])),
-              "test_ndcg_at_20": sum(ndcg_values[20]) / max(1, len(ndcg_values[20])),
-              "epochs": args.epochs}
-    args.results_file.parent.mkdir(parents=True, exist_ok=True)
-    args.results_file.write_text(json.dumps(result, indent=2), encoding="utf-8")
-    print(json.dumps(result, indent=2))
-    print(f"NDCG@5={result['test_ndcg_at_5']:.4f} | "
-          f"NDCG@10={result['test_ndcg_at_10']:.4f} | "
-          f"NDCG@15={result['test_ndcg_at_15']:.4f} | "
-          f"NDCG@20={result['test_ndcg_at_20']:.4f}")
 
 
 if __name__ == "__main__":
