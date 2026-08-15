@@ -1,0 +1,15 @@
+# Local Python/Jupyter files
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Kiva/UN data is large and should be downloaded or shared separately.
+data/raw/*.csv
+data/processed/*.csv
+
+# Model checkpoints and generated evaluation output are experiment artifacts.
+outputs/models/
+outputs/evaluation/
+
+# macOS metadata
+.DS_Store

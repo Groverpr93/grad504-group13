@@ -1,0 +1,75 @@
+{
+  "input_files": [
+    "kiva_loans.csv",
+    "loan_theme_ids.csv",
+    "loan_themes_by_region.csv",
+    "kiva_mpi_region_locations.csv",
+    "kiva_country_profile_variables.csv"
+  ],
+  "join_counts": {
+    "country_profile_matched": 656279,
+    "country_profile_unmatched": 1419,
+    "loan_to_theme_id_matched": 657692,
+    "loan_to_theme_id_unmatched": 6,
+    "loans_skipped_missing_id": 13507,
+    "mpi_country_proxy": 482005,
+    "mpi_loan_country_region": 52985,
+    "mpi_matched": 545209,
+    "mpi_theme_country_region": 10219,
+    "mpi_unmatched": 112489,
+    "theme_to_region_matched": 630708,
+    "theme_to_region_unmatched": 26990
+  },
+  "join_rates_percent": {
+    "country_profile": 99.78,
+    "loan_to_theme_id": 100.0,
+    "mpi": 82.9,
+    "mpi_country_proxy": 73.29,
+    "mpi_exact_region": 9.61,
+    "theme_to_region": 95.9
+  },
+  "output_files": [
+    "loans_joined.csv",
+    "loan_partner_edges.csv",
+    "graph_nodes.csv",
+    "join_report.json"
+  ],
+  "processed_loans": 657698,
+  "unmatched_examples": {
+    "country": [
+      "Kosovo"
+    ],
+    "loan_theme_id": [
+      "653051",
+      "653048",
+      "653050",
+      "653047",
+      "653049",
+      "1340298"
+    ],
+    "mpi_region": [
+      "Dhupguri",
+      "Dar es Salaam",
+      "Hai Duong",
+      "Tulkrem",
+      "Nablus",
+      "Balipatna, Odisha",
+      "jenin",
+      "Calexico, CA",
+      "Hebron",
+      "Ramallah"
+    ],
+    "theme_id": [
+      "a1050000000wf0k",
+      "a1050000002vt7k",
+      "a1050000000qwnf",
+      "a1050000002vpb2",
+      "a1050000000wf1y",
+      "a1050000000pndl",
+      "a1050000000poo6",
+      "a1050000000smst",
+      "a1050000000thag",
+      "a1050000000wf15"
+    ]
+  }
+}
