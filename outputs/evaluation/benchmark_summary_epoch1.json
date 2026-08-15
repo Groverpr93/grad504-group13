@@ -1,0 +1,33 @@
+{
+  "model": {
+    "ndcg_at_5": 0.38598425076963583,
+    "target_ndcg_at_5": 0.8,
+    "ndcg_at_5_met": false,
+    "auc_above_random": true
+  },
+  "fairness": {
+    "gender": {
+      "selection_rate_gap": 0.18253380468156935,
+      "average_partner_gap": 0.09073524006192743,
+      "weighted_partner_gap": 0.18253380468156935,
+      "partners_meeting_threshold": 83,
+      "partner_threshold_pass_rate": 0.5496688741721855,
+      "target_gap": 0.05,
+      "selection_gap_met": false,
+      "raw_violation_rate": 0.4503311258278146,
+      "reranking": {
+        "minimum_k": 10,
+        "eval_batch_size": 10,
+        "variance_threshold": 0.0025,
+        "average_stopped_at": 10.0,
+        "maximum_stopped_at": 10,
+        "average_final_variance": null,
+        "early_stop_lists": 0,
+        "lists_evaluated": 7500,
+        "status": "reranking_disabled_for_query_level_attributes"
+      },
+      "guardrail_violation_rate": null,
+      "guardrail_status": "measurement_only_not_enforced"
+    }
+  }
+}

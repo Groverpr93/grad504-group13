@@ -1,0 +1,12 @@
+{
+  "loan_queries_evaluated": 7500,
+  "auc": 0.900028,
+  "average_precision": 0.3463310550580352,
+  "hits_at_5": 0.6346666666666667,
+  "ndcg_at_5": 0.38598425076963583,
+  "ndcg_at_10": 0.46180015086529813,
+  "ndcg_at_15": 0.4796410014550746,
+  "ndcg_at_20": 0.48769593760621355,
+  "test_loans": 7500,
+  "epochs_in_checkpoint": 1
+}
