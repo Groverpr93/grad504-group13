@@ -61,7 +61,9 @@ leakage into validation or test embeddings.
 The project uses one direct GNN script. The one-epoch JSON files under
 `outputs/evaluation/*epoch1*` are an archived flow check. Use separate
 `full_run` paths for the final experiment so the checkpoint remains
-reproducible.
+reproducible. Full-data runs cap each categorical vocabulary at 16 frequent
+values by default; rare values are mapped to `unknown` so the dense feature
+matrix remains feasible in memory while all loan rows are retained.
 
 ```bash
 python -m pip install torch

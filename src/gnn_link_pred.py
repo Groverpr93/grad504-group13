@@ -16,6 +16,7 @@ import argparse
 import csv
 import json
 import random
+from collections import Counter
 from pathlib import Path
 
 import torch
@@ -80,6 +81,8 @@ def main() -> None:
     parser.add_argument("--model-file", type=Path, default=Path("outputs/models/gnn_model.pt"),
                         help="Checkpoint used by the separate evaluation script")
     parser.add_argument("--max-loans", type=int, default=50000)
+    parser.add_argument("--max-categories", type=int, default=16,
+                        help="Keep only the most frequent values per categorical field")
     parser.add_argument("--epochs", type=int, default=20)
     parser.add_argument("--seed", type=int, default=50413)
     # Read the values supplied by the user.
@@ -147,10 +150,22 @@ def main() -> None:
     # Build a vocabulary for each categorical column.
     categories = []
     for column in range(len(categorical_fields)):
-        categories.append(sorted({row["categorical"][column] for row in rows}))
+        # A dense one-hot matrix cannot hold tens of thousands of region names.
+        # Keep frequent values and map the long tail to the existing unknown
+        # bucket. This preserves all loans while keeping memory predictable.
+        counts = Counter(row["categorical"][column] for row in rows)
+        keep = {value for value, _ in counts.most_common(max(1, args.max_categories - 1))}
+        keep.add("unknown")
+        for row in rows:
+            if row["categorical"][column] not in keep:
+                row["categorical"][column] = "unknown"
+        categories.append(sorted(keep))
     category_count = sum(len(column) for column in categories)
     # Add one extra feature to identify loan nodes from partner nodes.
     feature_size = len(numeric_fields) + category_count + 1
+    estimated_gb = node_count * feature_size * 4 / (1024 ** 3)
+    print(f"feature matrix: {node_count:,} x {feature_size} float32 "
+          f"(about {estimated_gb:.2f} GB)")
     features = torch.zeros(node_count, feature_size)
     features[:len(loan_id), :len(numeric_fields)] = values
     features[:len(loan_id), len(numeric_fields)] = 1.0  # loan node indicator

@@ -10,6 +10,7 @@ data/processed/*.csv
 # Model checkpoints and generated evaluation output are experiment artifacts.
 outputs/models/
 outputs/evaluation/
+outputs/logs/
 
 # macOS metadata
 .DS_Store
