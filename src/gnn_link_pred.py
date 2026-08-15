@@ -184,6 +184,7 @@ def main() -> None:
         # Make the graph undirected so messages flow loan -> partner and back.
         edge_pairs.extend([(loan, partner), (partner, loan)])
     edges = torch.tensor(edge_pairs, dtype=torch.long).t().contiguous()
+    print(f"graph edges ready: {len(train_rows):,} historical links", flush=True)
     model = SimpleGCN(feature_size, 32, 16)
     optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 
@@ -197,20 +198,33 @@ def main() -> None:
         pair = (random.choice(all_loans), random.choice(all_partners))
         if pair not in known:
             known.add(pair); negative.append(pair)
+        if len(negative) and len(negative) % 100000 == 0:
+            print(f"negative pairs sampled: {len(negative):,}/{len(positive):,}", flush=True)
+
+    # Convert pairs once so each epoch uses one vectorized tensor operation,
+    # rather than creating nearly one million tiny Python-level dot products.
+    pair_tensor = torch.tensor(positive + negative, dtype=torch.long)
+    pair_sources = pair_tensor[:, 0]
+    pair_targets = pair_tensor[:, 1]
+    labels = torch.cat([torch.ones(len(positive)), torch.zeros(len(negative))])
 
     # Train BCE on observed links (1) and sampled non-links (0).
     # Repeat the optimization step for the requested number of epochs.
     args.log_file.parent.mkdir(parents=True, exist_ok=True)
     args.log_file.write_text("", encoding="utf-8")
     args.model_file.parent.mkdir(parents=True, exist_ok=True)
+    setup_record = {"stage": "setup_complete", "loans": len(rows),
+                    "nodes": node_count, "train_links": len(train_rows),
+                    "feature_size": feature_size}
+    args.log_file.write_text(json.dumps(setup_record) + "\n", encoding="utf-8")
+    print("setup complete; starting epoch 1", flush=True)
     for epoch in range(1, args.epochs + 1):
         optimizer.zero_grad()
         # Compute one embedding for every loan and partner.
         embeddings = model(features, edges)
-        pairs = positive + negative
         # A dot product is high when the two node embeddings point together.
-        scores = torch.stack([(embeddings[a] * embeddings[b]).sum() for a, b in pairs])
-        labels = torch.cat([torch.ones(len(positive)), torch.zeros(len(negative))])
+        # Indexing whole rows lets PyTorch calculate all pair scores together.
+        scores = (embeddings[pair_sources] * embeddings[pair_targets]).sum(dim=1)
         # BCE teaches positive pairs to score high and negative pairs low.
         loss = nn.functional.binary_cross_entropy_with_logits(scores, labels)
         loss.backward(); optimizer.step()

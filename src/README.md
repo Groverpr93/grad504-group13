@@ -19,7 +19,7 @@ Run a small, repeatable test before a long experiment:
 ```bash
 python src/gnn_link_pred.py --max-loans 50000 --epochs 1 \
   --model-file outputs/models/gnn_model_epoch1.pt \
-  --results-file outputs/evaluation/gnn_results_epoch1.json
+  --log-file outputs/logs/gnn_training_epoch1.jsonl
 
 python src/evaluate_gnn.py \
   --model-file outputs/models/gnn_model_epoch1.pt \
@@ -30,7 +30,7 @@ python src/evaluate_gnn.py \
 
 Inference returns at least 10 partner recommendations for each loan. Fairness
 is evaluated across the batch of loan queries because each individual loan has
-only one gender/region group:
+only one gender group:
 
 ```bash
 python src/evaluate_gnn.py --model-file outputs/models/gnn_model_epoch1.pt \
@@ -40,8 +40,8 @@ python src/evaluate_gnn.py --model-file outputs/models/gnn_model_epoch1.pt \
 The inference audit is saved in `outputs/evaluation/reranked_inference.json`.
 
 The model file contains the frozen embeddings and temporal test split. The
-evaluation script does not retrain the model. `fairness_gender.json` and
-`fairness_region.json` are measurement-only outputs; the guardrail is reported
+evaluation script does not retrain the model. `fairness_gender.json` is a
+measurement-only output; the guardrail is reported
 as not enforced until a fairness-aware training objective is added.
 
 Inference output is keyed by loan ID and contains partner ID/name objects,
@@ -54,3 +54,10 @@ group's selection rate, selected/query counts, that partner's gap, and whether
 the 5% threshold is met. Aggregate average and weighted gaps are included only
 as context; the partner threshold pass rate is the main summary.
 Partner entries include both `partner_id` and the Kiva `field_partner_name`.
+
+The evaluator now applies an inference-time gender exposure guardrail after raw
+GNN scoring. It was smoke-tested on synthetic loan/partner scores before being
+run on the full checkpoint; rerun the evaluator to generate guarded full-run
+results. The default penalty is `1.0`: `adjusted_score = raw_score - penalty *
+max(0, current_group_rate - other_group_rate)`. It is configurable with
+`--guardrail-penalty` and should be selected using validation data.

@@ -1,0 +1,3896 @@
+{
+  "attribute": "gender",
+  "cutoff": 10,
+  "group_query_counts": {
+    "female": 78922,
+    "male": 19652
+  },
+  "unknown_query_count": 81,
+  "protected_groups": [
+    "female",
+    "male"
+  ],
+  "selection_rate_gap": 0.04391273118800459,
+  "average_partner_gap": 0.024196294006682537,
+  "weighted_partner_gap": 0.04391273118800459,
+  "maximum_partner_gap": 0.24180863855288193,
+  "partners_meeting_threshold": 174,
+  "partner_threshold_pass_rate": 0.8571428571428571,
+  "per_partner": {
+    "164": {
+      "partner_id": "164",
+      "partner_name": "Yehu Microfinance Trust",
+      "group_selection_rates": {
+        "female": 0.18373837459770406,
+        "male": 0.10813148788927336
+      },
+      "group_selected_counts": {
+        "female": 14501,
+        "male": 2125
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.0756068867084307,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "156": {
+      "partner_id": "156",
+      "partner_name": "Juhudi Kilimo",
+      "group_selection_rates": {
+        "female": 0.19092268315552063,
+        "male": 0.10955627925910849
+      },
+      "group_selected_counts": {
+        "female": 15068,
+        "male": 2153
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.08136640389641214,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "311": {
+      "partner_id": "311",
+      "partner_name": "iDE Cambodia",
+      "group_selection_rates": {
+        "female": 0.19092268315552063,
+        "male": 0.12975778546712802
+      },
+      "group_selected_counts": {
+        "female": 15068,
+        "male": 2550
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.06116489768839262,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "388": {
+      "partner_id": "388",
+      "partner_name": "Hand in Hand Eastern Africa",
+      "group_selection_rates": {
+        "female": 0.14950203998884976,
+        "male": 0.09429065743944637
+      },
+      "group_selected_counts": {
+        "female": 11799,
+        "male": 1853
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.05521138254940339,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "202": {
+      "partner_id": "202",
+      "partner_name": "One Acre Fund",
+      "group_selection_rates": {
+        "female": 0.0784191987025164,
+        "male": 0.08910034602076125
+      },
+      "group_selected_counts": {
+        "female": 6189,
+        "male": 1751
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.010681147318244849,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "61": {
+      "partner_id": "61",
+      "partner_name": "MAXIMA Microfinance",
+      "group_selection_rates": {
+        "female": 0.06852335217049746,
+        "male": 0.06391207001831875
+      },
+      "group_selected_counts": {
+        "female": 5408,
+        "male": 1256
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.004611282152178708,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "63": {
+      "partner_id": "63",
+      "partner_name": "Humo",
+      "group_selection_rates": {
+        "female": 0.18231925191961684,
+        "male": 0.11199877875025442
+      },
+      "group_selected_counts": {
+        "female": 14389,
+        "male": 2201
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.07032047316936242,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "163": {
+      "partner_id": "163",
+      "partner_name": "HOFOKAM",
+      "group_selection_rates": {
+        "female": 0.13769291198905248,
+        "male": 0.11403419499287604
+      },
+      "group_selected_counts": {
+        "female": 10867,
+        "male": 2241
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.023658716996176443,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "126": {
+      "partner_id": "126",
+      "partner_name": "Paglaum Multi-Purpose Cooperative (PMPC)",
+      "group_selection_rates": {
+        "female": 0.1767187856364512,
+        "male": 0.11235497659271321
+      },
+      "group_selected_counts": {
+        "female": 13947,
+        "male": 2208
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.06436380904373798,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "526": {
+      "partner_id": "526",
+      "partner_name": "N/A, direct to Pawame",
+      "group_selection_rates": {
+        "female": 0.06549504574136489,
+        "male": 0.08106045186240586
+      },
+      "group_selected_counts": {
+        "female": 5169,
+        "male": 1593
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.015565406121040973,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "145": {
+      "partner_id": "145",
+      "partner_name": "Negros Women for Tomorrow Foundation (NWTF)",
+      "group_selection_rates": {
+        "female": 0.3468361166721573,
+        "male": 0.10502747811927539
+      },
+      "group_selected_counts": {
+        "female": 27373,
+        "male": 2064
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.24180863855288193,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "125": {
+      "partner_id": "125",
+      "partner_name": "Community Economic Ventures, Inc. (CEVI)",
+      "group_selection_rates": {
+        "female": 0.18637388814272318,
+        "male": 0.11281294524730308
+      },
+      "group_selected_counts": {
+        "female": 14709,
+        "male": 2217
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.0735609428954201,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "144": {
+      "partner_id": "144",
+      "partner_name": "CCT Credit Cooperative",
+      "group_selection_rates": {
+        "female": 0.16527710904437293,
+        "male": 0.09464685528190515
+      },
+      "group_selected_counts": {
+        "female": 13044,
+        "male": 1860
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.07063025376246777,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "136": {
+      "partner_id": "136",
+      "partner_name": "Gata Daku Multi-purpose Cooperative (GDMPC)",
+      "group_selection_rates": {
+        "female": 0.17512227262360305,
+        "male": 0.10838591491960106
+      },
+      "group_selected_counts": {
+        "female": 13821,
+        "male": 2130
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.06673635770400199,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "133": {
+      "partner_id": "133",
+      "partner_name": "VisionFund Kenya",
+      "group_selection_rates": {
+        "female": 0.17698487113859254,
+        "male": 0.11454304905353145
+      },
+      "group_selected_counts": {
+        "female": 13968,
+        "male": 2251
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.06244182208506109,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "58": {
+      "partner_id": "58",
+      "partner_name": "Negros Women for Tomorrow Foundation (NWTF)",
+      "group_selection_rates": {
+        "female": 0.1354755328045412,
+        "male": 0.07841441074699776
+      },
+      "group_selected_counts": {
+        "female": 10692,
+        "male": 1541
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.057061122057543434,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "129": {
+      "partner_id": "129",
+      "partner_name": "Tanaoba Lais Manekat Foundation (TLM)",
+      "group_selection_rates": {
+        "female": 0.08384227465092116,
+        "male": 0.03159983716670059
+      },
+      "group_selected_counts": {
+        "female": 6617,
+        "male": 621
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.05224243748422057,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "204": {
+      "partner_id": "204",
+      "partner_name": "VisionFund Cambodia",
+      "group_selection_rates": {
+        "female": 0.15744659283849877,
+        "male": 0.090677793608793
+      },
+      "group_selected_counts": {
+        "female": 12426,
+        "male": 1782
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.06676879922970577,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "159": {
+      "partner_id": "159",
+      "partner_name": "Cooperativa San Jose",
+      "group_selection_rates": {
+        "female": 0.0739464281189022,
+        "male": 0.04671280276816609
+      },
+      "group_selected_counts": {
+        "female": 5836,
+        "male": 918
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.02723362535073611,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "65": {
+      "partner_id": "65",
+      "partner_name": "BRAC Uganda",
+      "group_selection_rates": {
+        "female": 0.12350168520818022,
+        "male": 0.09062690820272745
+      },
+      "group_selected_counts": {
+        "female": 9747,
+        "male": 1781
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.03287477700545277,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "262": {
+      "partner_id": "262",
+      "partner_name": "Junior Achievement Kenya",
+      "group_selection_rates": {
+        "female": 0.0641266060160665,
+        "male": 0.06594748626094037
+      },
+      "group_selected_counts": {
+        "male": 1296,
+        "female": 5061
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.0018208802448738681,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "9": {
+      "partner_id": "9",
+      "partner_name": "KREDIT Microfinance Institution",
+      "group_selection_rates": {
+        "female": 0.06932160867692151,
+        "male": 0.06467535110930185
+      },
+      "group_selected_counts": {
+        "male": 1271,
+        "female": 5471
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.0046462575676196605,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "215": {
+      "partner_id": "215",
+      "partner_name": "Arvand",
+      "group_selection_rates": {
+        "female": 0.16910367197992954,
+        "male": 0.11398330958681051
+      },
+      "group_selected_counts": {
+        "male": 2240,
+        "female": 13346
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.05512036239311903,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "455": {
+      "partner_id": "455",
+      "partner_name": "JWS Pakistan",
+      "group_selection_rates": {
+        "female": 0.18215453232305315,
+        "male": 0.11042133116222268
+      },
+      "group_selected_counts": {
+        "male": 2170,
+        "female": 14376
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.07173320116083047,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "245": {
+      "partner_id": "245",
+      "partner_name": "CrediCampo",
+      "group_selection_rates": {
+        "female": 0.1848280580826639,
+        "male": 0.11464481986566252
+      },
+      "group_selected_counts": {
+        "male": 2253,
+        "female": 14587
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.07018323821700137,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "507": {
+      "partner_id": "507",
+      "partner_name": "Aldea Global",
+      "group_selection_rates": {
+        "female": 0.06617926560401409,
+        "male": 0.07744758803175249
+      },
+      "group_selected_counts": {
+        "male": 1522,
+        "female": 5223
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.011268322427738398,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "528": {
+      "partner_id": "528",
+      "partner_name": "Inyenyeri",
+      "group_selection_rates": {
+        "female": 0.06681280251387446,
+        "male": 0.07856706696519439
+      },
+      "group_selected_counts": {
+        "male": 1544,
+        "female": 5273
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.011754264451319926,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "504": {
+      "partner_id": "504",
+      "partner_name": "Mountain Lion Agriculture",
+      "group_selection_rates": {
+        "female": 0.0656724360761258,
+        "male": 0.08619987787502545
+      },
+      "group_selected_counts": {
+        "male": 1694,
+        "female": 5183
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.020527441798899648,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "393": {
+      "partner_id": "393",
+      "partner_name": "TerraClear Development",
+      "group_selection_rates": {
+        "female": 0.01377309242036441,
+        "male": 0.04411764705882353
+      },
+      "group_selected_counts": {
+        "female": 1087,
+        "male": 867
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.03034455463845912,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "281": {
+      "partner_id": "281",
+      "partner_name": "Rent-to-Own",
+      "group_selection_rates": {
+        "female": 0.019069460986797092,
+        "male": 0.049511500101770814
+      },
+      "group_selected_counts": {
+        "female": 1505,
+        "male": 973
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.030442039114973722,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "481": {
+      "partner_id": "481",
+      "partner_name": "Entrepreneurs du Monde - Sont Oo Tehtwin",
+      "group_selection_rates": {
+        "female": 0.015686373888142723,
+        "male": 0.03902910645226949
+      },
+      "group_selected_counts": {
+        "female": 1238,
+        "male": 767
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.023342732564126764,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "438": {
+      "partner_id": "438",
+      "partner_name": "R\u00cd\u00a9seau de Micro-institutions de Croissance de Revenus (RMCR)",
+      "group_selection_rates": {
+        "female": 0.02019715668634855,
+        "male": 0.0347547323427641
+      },
+      "group_selected_counts": {
+        "female": 1594,
+        "male": 683
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.01455757565641555,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "225": {
+      "partner_id": "225",
+      "partner_name": "Novica",
+      "group_selection_rates": {
+        "female": 0.011821798737994476,
+        "male": 0.030734785263586403
+      },
+      "group_selected_counts": {
+        "female": 933,
+        "male": 604
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.018912986525591927,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "217": {
+      "partner_id": "217",
+      "partner_name": "ACEP Cameroun",
+      "group_selection_rates": {
+        "female": 0.010060566128582651,
+        "male": 0.032057805821290454
+      },
+      "group_selected_counts": {
+        "female": 794,
+        "male": 630
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.021997239692707803,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "532": {
+      "partner_id": "532",
+      "partner_name": "N/A, direct to All Across Africa",
+      "group_selection_rates": {
+        "female": 0.06540635057398445,
+        "male": 0.08207815998371668
+      },
+      "group_selected_counts": {
+        "female": 5162,
+        "male": 1613
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.01667180940973223,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "525": {
+      "partner_id": "525",
+      "partner_name": "N/A, direct to Thread International",
+      "group_selection_rates": {
+        "female": 0.06699019284863536,
+        "male": 0.08009362914716059
+      },
+      "group_selected_counts": {
+        "female": 5287,
+        "male": 1574
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.013103436298525228,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "247": {
+      "partner_id": "247",
+      "partner_name": "BRAC Pakistan",
+      "group_selection_rates": {
+        "female": 0.19898127264894452,
+        "male": 0.11154081009566456
+      },
+      "group_selected_counts": {
+        "female": 15704,
+        "male": 2192
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.08744046255327996,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "386": {
+      "partner_id": "386",
+      "partner_name": "Kenya ECLOF",
+      "group_selection_rates": {
+        "female": 0.17541369960213882,
+        "male": 0.11113372684714024
+      },
+      "group_selected_counts": {
+        "female": 13844,
+        "male": 2184
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.06427997275499858,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "143": {
+      "partner_id": "143",
+      "partner_name": "Edpyme Alternativa",
+      "group_selection_rates": {
+        "female": 0.1055599199209346,
+        "male": 0.05704254019947079
+      },
+      "group_selected_counts": {
+        "female": 8331,
+        "male": 1121
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.048517379721463805,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "138": {
+      "partner_id": "138",
+      "partner_name": "iDE Cambodia",
+      "group_selection_rates": {
+        "female": 0.17047211170522794,
+        "male": 0.11123549765927132
+      },
+      "group_selected_counts": {
+        "male": 2186,
+        "female": 13454
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.05923661404595662,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "479": {
+      "partner_id": "479",
+      "partner_name": "Pomona Impact",
+      "group_selection_rates": {
+        "female": 0.06525430171561795,
+        "male": 0.07989008752289843
+      },
+      "group_selected_counts": {
+        "male": 1570,
+        "female": 5150
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.014635785807280477,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "520": {
+      "partner_id": "520",
+      "partner_name": "N/A, direct to Moko Furniture (Watervale Investments)",
+      "group_selection_rates": {
+        "female": 0.0656724360761258,
+        "male": 0.0760736820679829
+      },
+      "group_selected_counts": {
+        "male": 1495,
+        "female": 5183
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.0104012459918571,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "534": {
+      "partner_id": "534",
+      "partner_name": "N/A, direct to ANA by Karma",
+      "group_selection_rates": {
+        "female": 0.06564709459973138,
+        "male": 0.08380826378994505
+      },
+      "group_selected_counts": {
+        "male": 1647,
+        "female": 5181
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.01816116919021367,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "154": {
+      "partner_id": "154",
+      "partner_name": "Fundaci\u00cd_n Mario Santo Domingo (FMSD)",
+      "group_selection_rates": {
+        "female": 0.13058462786041916,
+        "male": 0.07994097292896397
+      },
+      "group_selected_counts": {
+        "female": 10306,
+        "male": 1571
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.05064365493145519,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "167": {
+      "partner_id": "167",
+      "partner_name": "PADECOMSM",
+      "group_selection_rates": {
+        "female": 0.1470312460403943,
+        "male": 0.08202727457765113
+      },
+      "group_selected_counts": {
+        "female": 11604,
+        "male": 1612
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.06500397146274317,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "457": {
+      "partner_id": "457",
+      "partner_name": "Cooperativa de Ahorro y Cr\u00cd\u00a9dito Mujeres Unidas (CACMU)",
+      "group_selection_rates": {
+        "female": 0.06735764425635438,
+        "male": 0.0474760838591492
+      },
+      "group_selected_counts": {
+        "female": 5316,
+        "male": 933
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.019881560397205178,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "188": {
+      "partner_id": "188",
+      "partner_name": "VisionFund Ecuador",
+      "group_selection_rates": {
+        "female": 0.06710422949241023,
+        "male": 0.052666395277834316
+      },
+      "group_selected_counts": {
+        "female": 5296,
+        "male": 1035
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.01443783421457591,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "106": {
+      "partner_id": "106",
+      "partner_name": "Hattha Kaksekar Limited (HKL)",
+      "group_selection_rates": {
+        "female": 0.08507133625605028,
+        "male": 0.07073071443110115
+      },
+      "group_selected_counts": {
+        "female": 6714,
+        "male": 1390
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.01434062182494912,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "100": {
+      "partner_id": "100",
+      "partner_name": "IMON International",
+      "group_selection_rates": {
+        "female": 0.17801120093256634,
+        "male": 0.11148992468959902
+      },
+      "group_selected_counts": {
+        "female": 14049,
+        "male": 2191
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.06652127624296732,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "222": {
+      "partner_id": "222",
+      "partner_name": "UGAFODE Microfinance",
+      "group_selection_rates": {
+        "female": 0.10620612756899217,
+        "male": 0.09505393853042947
+      },
+      "group_selected_counts": {
+        "female": 8382,
+        "male": 1868
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.011152189038562701,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "258": {
+      "partner_id": "258",
+      "partner_name": "Sanergy",
+      "group_selection_rates": {
+        "female": 0.056764907123489014,
+        "male": 0.06177488296356605
+      },
+      "group_selected_counts": {
+        "female": 4480,
+        "male": 1214
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.0050099758400770356,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "296": {
+      "partner_id": "296",
+      "partner_name": "Assilassim\u00cd\u00a9 Solidarit\u00cd\u00a9",
+      "group_selection_rates": {
+        "female": 0.11094498365474773,
+        "male": 0.06879706900061063
+      },
+      "group_selected_counts": {
+        "female": 8756,
+        "male": 1352
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.0421479146541371,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "123": {
+      "partner_id": "123",
+      "partner_name": "Alalay sa Kaunlaran (ASKI)",
+      "group_selection_rates": {
+        "female": 0.1688502572159854,
+        "male": 0.10782617545288012
+      },
+      "group_selected_counts": {
+        "female": 13326,
+        "male": 2119
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.06102408176310528,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "407": {
+      "partner_id": "407",
+      "partner_name": "Kamworks",
+      "group_selection_rates": {
+        "female": 0.05135450191328147,
+        "male": 0.05510889476898025
+      },
+      "group_selected_counts": {
+        "female": 4053,
+        "male": 1083
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.003754392855698785,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "119": {
+      "partner_id": "119",
+      "partner_name": "Asociaci\u00cd_n Arariwa",
+      "group_selection_rates": {
+        "female": 0.12369174628113834,
+        "male": 0.05938326887848565
+      },
+      "group_selected_counts": {
+        "female": 9762,
+        "male": 1167
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.06430847740265269,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "93": {
+      "partner_id": "93",
+      "partner_name": "EDAPROSPO",
+      "group_selection_rates": {
+        "female": 0.06838397405032817,
+        "male": 0.04544066761652758
+      },
+      "group_selected_counts": {
+        "female": 5397,
+        "male": 893
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.02294330643380059,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "62": {
+      "partner_id": "62",
+      "partner_name": "Patan Business and Professional Women",
+      "group_selection_rates": {
+        "female": 0.047578621930513675,
+        "male": 0.04793405251373906
+      },
+      "group_selected_counts": {
+        "female": 3755,
+        "male": 942
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.00035543058322538845,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "521": {
+      "partner_id": "521",
+      "partner_name": "Impact Hub",
+      "group_selection_rates": {
+        "female": 0.06496287473708218,
+        "male": 0.0816201913291268
+      },
+      "group_selected_counts": {
+        "female": 5127,
+        "male": 1604
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.016657316592044627,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "199": {
+      "partner_id": "199",
+      "partner_name": "CrediCampo",
+      "group_selection_rates": {
+        "female": 0.15960061833202402,
+        "male": 0.15204559332383472
+      },
+      "group_selected_counts": {
+        "female": 12596,
+        "male": 2988
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.007555025008189303,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "466": {
+      "partner_id": "466",
+      "partner_name": "Digital Divide Data (DDD)",
+      "group_selection_rates": {
+        "female": 0.013164896986898456,
+        "male": 0.013535518013433747
+      },
+      "group_selected_counts": {
+        "female": 1039,
+        "male": 266
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.0003706210265352911,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "531": {
+      "partner_id": "531",
+      "partner_name": "N/A, direct to Azimuth Group Corp",
+      "group_selection_rates": {
+        "female": 0.06695218063404373,
+        "male": 0.08279055566863423
+      },
+      "group_selected_counts": {
+        "female": 5284,
+        "male": 1627
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.0158383750345905,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "533": {
+      "partner_id": "533",
+      "partner_name": "MEC APROVAG",
+      "group_selection_rates": {
+        "female": 0.06650870479714148,
+        "male": 0.08253612863830653
+      },
+      "group_selected_counts": {
+        "female": 5249,
+        "male": 1622
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.016027423841165053,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "389": {
+      "partner_id": "389",
+      "partner_name": "SEED Center Philippines",
+      "group_selection_rates": {
+        "female": 0.1604368870530397,
+        "male": 0.09322206391207002
+      },
+      "group_selected_counts": {
+        "female": 12662,
+        "male": 1832
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.06721482314096969,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "182": {
+      "partner_id": "182",
+      "partner_name": "BRAC Liberia",
+      "group_selection_rates": {
+        "female": 0.06686348546666329,
+        "male": 0.05673722776307755
+      },
+      "group_selected_counts": {
+        "female": 5277,
+        "male": 1115
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.010126257703585745,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "137": {
+      "partner_id": "137",
+      "partner_name": "Fundaci\u00cd_n ESPOIR",
+      "group_selection_rates": {
+        "female": 0.10781531132003751,
+        "male": 0.06263993486668024
+      },
+      "group_selected_counts": {
+        "female": 8509,
+        "male": 1231
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.04517537645335727,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "121": {
+      "partner_id": "121",
+      "partner_name": "Thanh Hoa Microfinance Institution",
+      "group_selection_rates": {
+        "female": 0.023694280428777782,
+        "male": 0.008141664970486465
+      },
+      "group_selected_counts": {
+        "female": 1870,
+        "male": 160
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.015552615458291317,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "428": {
+      "partner_id": "428",
+      "partner_name": "Milaap",
+      "group_selection_rates": {
+        "female": 0.02986492993081777,
+        "male": 0.0032057805821290456
+      },
+      "group_selected_counts": {
+        "female": 2357,
+        "male": 63
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.026659149348688724,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "328": {
+      "partner_id": "328",
+      "partner_name": "Pana Pana",
+      "group_selection_rates": {
+        "female": 0.014647373355971719,
+        "male": 0.01134744555261551
+      },
+      "group_selected_counts": {
+        "female": 1156,
+        "male": 223
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.003299927803356209,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "515": {
+      "partner_id": "515",
+      "partner_name": "N/A, direct to Accents and Art",
+      "group_selection_rates": {
+        "female": 0.06643268036795824,
+        "male": 0.07841441074699776
+      },
+      "group_selected_counts": {
+        "male": 1541,
+        "female": 5243
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.011981730379039518,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "516": {
+      "partner_id": "516",
+      "partner_name": "N/A, direct to Simusolar",
+      "group_selection_rates": {
+        "female": 0.06549504574136489,
+        "male": 0.08172196214125789
+      },
+      "group_selected_counts": {
+        "male": 1606,
+        "female": 5169
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.016226916399893,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "169": {
+      "partner_id": "169",
+      "partner_name": "SEF International",
+      "group_selection_rates": {
+        "female": 0.0196016319910798,
+        "male": 0.044422959495216775
+      },
+      "group_selected_counts": {
+        "male": 873,
+        "female": 1547
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.024821327504136976,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "445": {
+      "partner_id": "445",
+      "partner_name": "Siza Capital",
+      "group_selection_rates": {
+        "female": 0.015762398317325968,
+        "male": 0.0448300427437411
+      },
+      "group_selected_counts": {
+        "male": 881,
+        "female": 1244
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.02906764442641513,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "77": {
+      "partner_id": "77",
+      "partner_name": "Al Majmoua",
+      "group_selection_rates": {
+        "female": 0.01406451939890018,
+        "male": 0.04213311622226745
+      },
+      "group_selected_counts": {
+        "male": 828,
+        "female": 1110
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.02806859682336727,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "239": {
+      "partner_id": "239",
+      "partner_name": "Agro & Social Fund",
+      "group_selection_rates": {
+        "female": 0.01648463039456679,
+        "male": 0.03617952371259923
+      },
+      "group_selected_counts": {
+        "male": 711,
+        "female": 1301
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.01969489331803244,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "298": {
+      "partner_id": "298",
+      "partner_name": "FUNDAPEC",
+      "group_selection_rates": {
+        "female": 0.007298345201591444,
+        "male": 0.021270099735395887
+      },
+      "group_selected_counts": {
+        "male": 418,
+        "female": 576
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.013971754533804443,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "404": {
+      "partner_id": "404",
+      "partner_name": "Ibdaa Microfinance",
+      "group_selection_rates": {
+        "female": 0.008983553381820025,
+        "male": 0.024628536535721553
+      },
+      "group_selected_counts": {
+        "male": 484,
+        "female": 709
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.015644983153901528,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "395": {
+      "partner_id": "395",
+      "partner_name": "Solar and Energy Loan Fund (SELF)",
+      "group_selection_rates": {
+        "female": 0.006474747218772965,
+        "male": 0.022084266232444534
+      },
+      "group_selected_counts": {
+        "male": 434,
+        "female": 511
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.01560951901367157,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "423": {
+      "partner_id": "423",
+      "partner_name": "Yayasan Rumah Energi",
+      "group_selection_rates": {
+        "female": 0.008654114188692634,
+        "male": 0.0254427030327702
+      },
+      "group_selected_counts": {
+        "male": 500,
+        "female": 683
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.016788588844077565,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "292": {
+      "partner_id": "292",
+      "partner_name": "Fundaci\u00cd_n Namaste Guatemaya",
+      "group_selection_rates": {
+        "female": 0.012835457793771064,
+        "male": 0.04554243842865866
+      },
+      "group_selected_counts": {
+        "male": 895,
+        "female": 1013
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.0327069806348876,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "48": {
+      "partner_id": "48",
+      "partner_name": "IMPRO",
+      "group_selection_rates": {
+        "female": 0.014241909733661084,
+        "male": 0.043099938937512725
+      },
+      "group_selected_counts": {
+        "male": 847,
+        "female": 1124
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.02885802920385164,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "177": {
+      "partner_id": "177",
+      "partner_name": "Interactuar",
+      "group_selection_rates": {
+        "female": 0.13915004688173133,
+        "male": 0.1086912273559943
+      },
+      "group_selected_counts": {
+        "female": 10982,
+        "male": 2136
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.03045881952573702,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "465": {
+      "partner_id": "465",
+      "partner_name": "Asociaci\u00cd_n ONG Avansar",
+      "group_selection_rates": {
+        "female": 0.12129697676186614,
+        "male": 0.0712904538978221
+      },
+      "group_selected_counts": {
+        "female": 9573,
+        "male": 1401
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.05000652286404404,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "171": {
+      "partner_id": "171",
+      "partner_name": "Bai Tushum Bank",
+      "group_selection_rates": {
+        "female": 0.017447606497554547,
+        "male": 0.023763484632607367
+      },
+      "group_selected_counts": {
+        "male": 467,
+        "female": 1377
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.00631587813505282,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "517": {
+      "partner_id": "517",
+      "partner_name": "N/A, direct to ECEG",
+      "group_selection_rates": {
+        "female": 0.06610324117483085,
+        "male": 0.08309586810502748
+      },
+      "group_selected_counts": {
+        "male": 1633,
+        "female": 5217
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.016992626930196625,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "523": {
+      "partner_id": "523",
+      "partner_name": "N/A, direct to Saha Global",
+      "group_selection_rates": {
+        "female": 0.06557107017054814,
+        "male": 0.080602483207816
+      },
+      "group_selected_counts": {
+        "male": 1584,
+        "female": 5175
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.015031413037267863,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "527": {
+      "partner_id": "527",
+      "partner_name": "Fundaci\u00cd_n Sartawi",
+      "group_selection_rates": {
+        "female": 0.06614125338942246,
+        "male": 0.0803480561774883
+      },
+      "group_selected_counts": {
+        "male": 1579,
+        "female": 5220
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.01420680278806584,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "458": {
+      "partner_id": "458",
+      "partner_name": "Camfed Ghana",
+      "group_selection_rates": {
+        "female": 0.10457160234155242,
+        "male": 0.03663749236718909
+      },
+      "group_selected_counts": {
+        "female": 8253,
+        "male": 720
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.06793410997436333,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "462": {
+      "partner_id": "462",
+      "partner_name": "Al Ibdaa Microfinance",
+      "group_selection_rates": {
+        "female": 0.010567395656470946,
+        "male": 0.01786077752900468
+      },
+      "group_selected_counts": {
+        "female": 834,
+        "male": 351
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.007293381872533736,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "464": {
+      "partner_id": "464",
+      "partner_name": "Banco do Povo Cr\u00cd\u00a9dito Solidario",
+      "group_selection_rates": {
+        "female": 0.01820785078938699,
+        "male": 0.04574598005292082
+      },
+      "group_selected_counts": {
+        "female": 1437,
+        "male": 899
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.027538129263533828,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "289": {
+      "partner_id": "289",
+      "partner_name": "Arab Center for Agriculture Development (ACAD)",
+      "group_selection_rates": {
+        "female": 0.005955246952687464,
+        "male": 0.020659474862609405
+      },
+      "group_selected_counts": {
+        "female": 470,
+        "male": 406
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.01470422790992194,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "181": {
+      "partner_id": "181",
+      "partner_name": "Credo",
+      "group_selection_rates": {
+        "female": 0.0168520818022858,
+        "male": 0.04116629350702219
+      },
+      "group_selected_counts": {
+        "female": 1330,
+        "male": 809
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.024314211704736386,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "140": {
+      "partner_id": "140",
+      "partner_name": "CIDRE",
+      "group_selection_rates": {
+        "female": 0.01631991079800309,
+        "male": 0.031294524730307346
+      },
+      "group_selected_counts": {
+        "female": 1288,
+        "male": 615
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.014974613932304256,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "361": {
+      "partner_id": "361",
+      "partner_name": "Fairtrasa Peru S.A.",
+      "group_selection_rates": {
+        "female": 0.02118547426573072,
+        "male": 0.028394056584571545
+      },
+      "group_selected_counts": {
+        "female": 1672,
+        "male": 558
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.007208582318840823,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "183": {
+      "partner_id": "183",
+      "partner_name": "BRAC Sierra Leone",
+      "group_selection_rates": {
+        "female": 0.02759686779351765,
+        "male": 0.0350091593730918
+      },
+      "group_selected_counts": {
+        "female": 2178,
+        "male": 688
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.007412291579574147,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "57": {
+      "partner_id": "57",
+      "partner_name": "Salone Microfinance Trust (SMT)",
+      "group_selection_rates": {
+        "female": 0.020665973999645218,
+        "male": 0.03714634642784449
+      },
+      "group_selected_counts": {
+        "female": 1631,
+        "male": 730
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.016480372428199275,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "480": {
+      "partner_id": "480",
+      "partner_name": "D and E Green Enterprises",
+      "group_selection_rates": {
+        "female": 0.01545830060059299,
+        "male": 0.03266843069407694
+      },
+      "group_selected_counts": {
+        "female": 1220,
+        "male": 642
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.01721013009348395,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "535": {
+      "partner_id": "535",
+      "partner_name": "N/A, direct to Ab Ovo Confectionery Limited",
+      "group_selection_rates": {
+        "female": 0.06596386305466156,
+        "male": 0.08345206594748626
+      },
+      "group_selected_counts": {
+        "male": 1640,
+        "female": 5206
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.017488202892824697,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "524": {
+      "partner_id": "524",
+      "partner_name": "N/A, direct to PT Green",
+      "group_selection_rates": {
+        "female": 0.06555839943235092,
+        "male": 0.08080602483207816
+      },
+      "group_selected_counts": {
+        "male": 1588,
+        "female": 5174
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.015247625399727238,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "536": {
+      "partner_id": "536",
+      "partner_name": "N/A, direct to EcoEnergy",
+      "group_selection_rates": {
+        "female": 0.06465877702034921,
+        "male": 0.08329940972928963
+      },
+      "group_selected_counts": {
+        "male": 1637,
+        "female": 5103
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.018640632708940424,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "518": {
+      "partner_id": "518",
+      "partner_name": "N/A, direct to Sikubora",
+      "group_selection_rates": {
+        "female": 0.06527964319201236,
+        "male": 0.0803480561774883
+      },
+      "group_selected_counts": {
+        "male": 1579,
+        "female": 5152
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.01506841298547594,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "499": {
+      "partner_id": "499",
+      "partner_name": "Chamroeun Microfinance Limited",
+      "group_selection_rates": {
+        "female": 0.06737031499455158,
+        "male": 0.08263789945043762
+      },
+      "group_selected_counts": {
+        "male": 1624,
+        "female": 5317
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.015267584455886038,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "411": {
+      "partner_id": "411",
+      "partner_name": "South Pacific Business Development (SPBD) - Solomon Islands",
+      "group_selection_rates": {
+        "female": 0.021540254935252526,
+        "male": 0.01791166293507022
+      },
+      "group_selected_counts": {
+        "male": 352,
+        "female": 1700
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.0036285920001823055,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "356": {
+      "partner_id": "356",
+      "partner_name": "iSchool Zambia",
+      "group_selection_rates": {
+        "female": 0.013304275107067737,
+        "male": 0.04014858538571138
+      },
+      "group_selected_counts": {
+        "male": 789,
+        "female": 1050
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.026844310278643643,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "317": {
+      "partner_id": "317",
+      "partner_name": "Fundaci\u00cd_n CREHO",
+      "group_selection_rates": {
+        "female": 0.00703225969945009,
+        "male": 0.026663952778343172
+      },
+      "group_selected_counts": {
+        "male": 524,
+        "female": 555
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.01963169307889308,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "429": {
+      "partner_id": "429",
+      "partner_name": "NESsT",
+      "group_selection_rates": {
+        "female": 0.006538100909759002,
+        "male": 0.00885406065540403
+      },
+      "group_selected_counts": {
+        "male": 174,
+        "female": 516
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.0023159597456450277,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "417": {
+      "partner_id": "417",
+      "partner_name": "Emerging Cooking Solutions Zambia",
+      "group_selection_rates": {
+        "female": 0.01612984972504498,
+        "male": 0.044931813555872176
+      },
+      "group_selected_counts": {
+        "male": 883,
+        "female": 1273
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.028801963830827195,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "210": {
+      "partner_id": "210",
+      "partner_name": "Zoona",
+      "group_selection_rates": {
+        "female": 0.013253592154278909,
+        "male": 0.04131894972521881
+      },
+      "group_selected_counts": {
+        "male": 812,
+        "female": 1046
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.0280653575709399,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "477": {
+      "partner_id": "477",
+      "partner_name": "Unreasonable Institute",
+      "group_selection_rates": {
+        "female": 0.004840221991333215,
+        "male": 0.00625890494606147
+      },
+      "group_selected_counts": {
+        "male": 123,
+        "female": 382
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.0014186829547282549,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "452": {
+      "partner_id": "452",
+      "partner_name": "African Clean Energy (ACE)",
+      "group_selection_rates": {
+        "female": 0.01619320341603102,
+        "male": 0.03867290860981071
+      },
+      "group_selected_counts": {
+        "male": 760,
+        "female": 1278
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.02247970519377969,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "398": {
+      "partner_id": "398",
+      "partner_name": "Agence Communautaire pour le Financement de la Micro Entreprise (ACFIME)",
+      "group_selection_rates": {
+        "female": 0.022756645802184436,
+        "male": 0.03170160797883167
+      },
+      "group_selected_counts": {
+        "male": 623,
+        "female": 1796
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.008944962176647232,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "243": {
+      "partner_id": "243",
+      "partner_name": "Kaebauk Investimentu no Finansas",
+      "group_selection_rates": {
+        "female": 0.020209827424545752,
+        "male": 0.03282108691227356
+      },
+      "group_selected_counts": {
+        "male": 645,
+        "female": 1595
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.01261125948772781,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "433": {
+      "partner_id": "433",
+      "partner_name": "Untu Microfinance",
+      "group_selection_rates": {
+        "female": 0.016966118446060666,
+        "male": 0.0450844697740688
+      },
+      "group_selected_counts": {
+        "male": 886,
+        "female": 1339
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.02811835132800813,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "150": {
+      "partner_id": "150",
+      "partner_name": "FUDECOSUR",
+      "group_selection_rates": {
+        "female": 0.009160943716580928,
+        "male": 0.032057805821290454
+      },
+      "group_selected_counts": {
+        "male": 630,
+        "female": 723
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.022896862104709526,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "115": {
+      "partner_id": "115",
+      "partner_name": "Vitas - Lebanon",
+      "group_selection_rates": {
+        "female": 0.01406451939890018,
+        "male": 0.031294524730307346
+      },
+      "group_selected_counts": {
+        "male": 615,
+        "female": 1110
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.017230005331407165,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "454": {
+      "partner_id": "454",
+      "partner_name": "Smart Credit",
+      "group_selection_rates": {
+        "female": 0.019373558703530067,
+        "male": 0.0347547323427641
+      },
+      "group_selected_counts": {
+        "male": 683,
+        "female": 1529
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.015381173639234032,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "430": {
+      "partner_id": "430",
+      "partner_name": "EthicCapital Credit Union",
+      "group_selection_rates": {
+        "female": 0.015585007982565064,
+        "male": 0.04895176063504987
+      },
+      "group_selected_counts": {
+        "male": 962,
+        "female": 1230
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.03336675265248481,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "413": {
+      "partner_id": "413",
+      "partner_name": "Priminvestnord",
+      "group_selection_rates": {
+        "female": 0.013785763158561618,
+        "male": 0.029157337675554652
+      },
+      "group_selected_counts": {
+        "male": 573,
+        "female": 1088
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.015371574516993034,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "456": {
+      "partner_id": "456",
+      "partner_name": "Vasham",
+      "group_selection_rates": {
+        "female": 0.01011124908137148,
+        "male": 0.032464889069814776
+      },
+      "group_selected_counts": {
+        "male": 638,
+        "female": 798
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.022353639988443294,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "26": {
+      "partner_id": "26",
+      "partner_name": "Hope Ukraine",
+      "group_selection_rates": {
+        "female": 0.015065507716479562,
+        "male": 0.045847750865051905
+      },
+      "group_selected_counts": {
+        "male": 901,
+        "female": 1189
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.030782243148572343,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "478": {
+      "partner_id": "478",
+      "partner_name": "MCE Social Capital",
+      "group_selection_rates": {
+        "female": 0.06373381313195307,
+        "male": 0.08055159780175046
+      },
+      "group_selected_counts": {
+        "female": 5030,
+        "male": 1583
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.016817784669797387,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "23": {
+      "partner_id": "23",
+      "partner_name": "Hluvuku-Adsema",
+      "group_selection_rates": {
+        "female": 0.01531892248042371,
+        "male": 0.03358436800325667
+      },
+      "group_selected_counts": {
+        "male": 660,
+        "female": 1209
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.01826544552283296,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "226": {
+      "partner_id": "226",
+      "partner_name": "Sistema Biobolsa",
+      "group_selection_rates": {
+        "female": 0.014102531613491802,
+        "male": 0.039436189700793815
+      },
+      "group_selected_counts": {
+        "female": 1113,
+        "male": 775
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.025333658087302015,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "326": {
+      "partner_id": "326",
+      "partner_name": "American University of Central Asia",
+      "group_selection_rates": {
+        "female": 0.008312004257368034,
+        "male": 0.026053327905556686
+      },
+      "group_selected_counts": {
+        "female": 656,
+        "male": 512
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.017741323648188652,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "368": {
+      "partner_id": "368",
+      "partner_name": "El Buen Socio",
+      "group_selection_rates": {
+        "female": 0.012493347862446467,
+        "male": 0.0405556686342357
+      },
+      "group_selected_counts": {
+        "female": 986,
+        "male": 797
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.028062320771789235,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "59": {
+      "partner_id": "59",
+      "partner_name": "iDE Cambodia",
+      "group_selection_rates": {
+        "female": 0.019563619776488177,
+        "male": 0.029818847954406678
+      },
+      "group_selected_counts": {
+        "female": 1544,
+        "male": 586
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.010255228177918501,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "175": {
+      "partner_id": "175",
+      "partner_name": "Koret Israel Economic Development Funds (KIEDF)",
+      "group_selection_rates": {
+        "female": 0.006512759433364588,
+        "male": 0.026663952778343172
+      },
+      "group_selected_counts": {
+        "female": 514,
+        "male": 524
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.020151193344978585,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "80": {
+      "partner_id": "80",
+      "partner_name": "Palestine for Credit & Development (FATEN)",
+      "group_selection_rates": {
+        "female": 0.008045918755226679,
+        "male": 0.04035212700997354
+      },
+      "group_selected_counts": {
+        "female": 635,
+        "male": 793
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.03230620825474686,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "369": {
+      "partner_id": "369",
+      "partner_name": "Asociaci\u00cd_n Chajulense de Mujeres (ACMUV)",
+      "group_selection_rates": {
+        "female": 0.012620055244418539,
+        "male": 0.038520252391614086
+      },
+      "group_selected_counts": {
+        "female": 996,
+        "male": 757
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.025900197147195547,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "55": {
+      "partner_id": "55",
+      "partner_name": "Friendship Bridge",
+      "group_selection_rates": {
+        "female": 0.014457312283013609,
+        "male": 0.03689191939751679
+      },
+      "group_selected_counts": {
+        "female": 1141,
+        "male": 725
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.022434607114503183,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "329": {
+      "partner_id": "329",
+      "partner_name": "Impact Carbon",
+      "group_selection_rates": {
+        "female": 0.010808139682217886,
+        "male": 0.02045593323834724
+      },
+      "group_selected_counts": {
+        "male": 402,
+        "female": 853
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.009647793556129354,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "529": {
+      "partner_id": "529",
+      "partner_name": "N/A, direct to LLK",
+      "group_selection_rates": {
+        "female": 0.0649882162134766,
+        "male": 0.08080602483207816
+      },
+      "group_selected_counts": {
+        "female": 5129,
+        "male": 1588
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.01581780861860156,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "148": {
+      "partner_id": "148",
+      "partner_name": "Association for Rural Development (ARD)",
+      "group_selection_rates": {
+        "female": 0.020640632523250806,
+        "male": 0.03918176267046611
+      },
+      "group_selected_counts": {
+        "male": 770,
+        "female": 1629
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.018541130147215302,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "443": {
+      "partner_id": "443",
+      "partner_name": "Cr\u00cd\u00a9dit Epargne Formation (CEFOR)",
+      "group_selection_rates": {
+        "female": 0.026469172093966195,
+        "male": 0.02788520252391614
+      },
+      "group_selected_counts": {
+        "male": 548,
+        "female": 2089
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.0014160304299499459,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "530": {
+      "partner_id": "530",
+      "partner_name": "N/A, direct to Jakana Foods",
+      "group_selection_rates": {
+        "female": 0.06680013177567726,
+        "male": 0.08304498269896193
+      },
+      "group_selected_counts": {
+        "female": 5272,
+        "male": 1632
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.016244850923284676,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "105": {
+      "partner_id": "105",
+      "partner_name": "CAURIE Microfinance",
+      "group_selection_rates": {
+        "female": 0.022946706875142546,
+        "male": 0.03821493995522084
+      },
+      "group_selected_counts": {
+        "female": 1811,
+        "male": 751
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.015268233080078297,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "319": {
+      "partner_id": "319",
+      "partner_name": "African Entrepreneur Collective (AEC)",
+      "group_selection_rates": {
+        "female": 0.006322698360406477,
+        "male": 0.011550987176877671
+      },
+      "group_selected_counts": {
+        "female": 499,
+        "male": 227
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.005228288816471194,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "416": {
+      "partner_id": "416",
+      "partner_name": "Proximity Designs",
+      "group_selection_rates": {
+        "female": 0.018093814145612123,
+        "male": 0.028953796051292488
+      },
+      "group_selected_counts": {
+        "female": 1428,
+        "male": 569
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.010859981905680365,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "44": {
+      "partner_id": "44",
+      "partner_name": "Esperanza International Dominican Republic",
+      "group_selection_rates": {
+        "female": 0.015686373888142723,
+        "male": 0.04340525137390596
+      },
+      "group_selected_counts": {
+        "female": 1238,
+        "male": 853
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.027718877485763238,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "412": {
+      "partner_id": "412",
+      "partner_name": "The Alliance for Artisan Enterprise at The Aspen Institute",
+      "group_selection_rates": {
+        "female": 0.008388028686551278,
+        "male": 0.014197028292285772
+      },
+      "group_selected_counts": {
+        "female": 662,
+        "male": 279
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.005808999605734494,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "117": {
+      "partner_id": "117",
+      "partner_name": "VisionFund Rwanda",
+      "group_selection_rates": {
+        "female": 0.003193026025696257,
+        "male": 0.013433747201302667
+      },
+      "group_selected_counts": {
+        "female": 252,
+        "male": 264
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.010240721175606409,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "358": {
+      "partner_id": "358",
+      "partner_name": "Instituto Peruano de Fomento Educativo",
+      "group_selection_rates": {
+        "female": 0.015724386102734345,
+        "male": 0.028190514960309384
+      },
+      "group_selected_counts": {
+        "female": 1241,
+        "male": 554
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.012466128857575039,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "187": {
+      "partner_id": "187",
+      "partner_name": "Micro Start/AFD",
+      "group_selection_rates": {
+        "female": 0.0237322926433694,
+        "male": 0.03892733564013841
+      },
+      "group_selected_counts": {
+        "male": 765,
+        "female": 1873
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.015195042996769006,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "442": {
+      "partner_id": "442",
+      "partner_name": "Entrepreneurs du Monde - Palmis Mikwofinans Sosyal",
+      "group_selection_rates": {
+        "female": 0.027292770076784673,
+        "male": 0.02885202523916141
+      },
+      "group_selected_counts": {
+        "female": 2154,
+        "male": 567
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.001559255162376736,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "87": {
+      "partner_id": "87",
+      "partner_name": "Tujijenge Tanzania",
+      "group_selection_rates": {
+        "female": 0.0046248194419806895,
+        "male": 0.012314268267860777
+      },
+      "group_selected_counts": {
+        "male": 242,
+        "female": 365
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.007689448825880087,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "240": {
+      "partner_id": "240",
+      "partner_name": "KosInvest",
+      "group_selection_rates": {
+        "female": 0.007184308557816578,
+        "male": 0.01633421534703847
+      },
+      "group_selected_counts": {
+        "female": 567,
+        "male": 321
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.009149906789221892,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "146": {
+      "partner_id": "146",
+      "partner_name": "Nor Horizon",
+      "group_selection_rates": {
+        "female": 0.013887129064139277,
+        "male": 0.03882556482800733
+      },
+      "group_selected_counts": {
+        "female": 1096,
+        "male": 763
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.024938435763868054,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "472": {
+      "partner_id": "472",
+      "partner_name": "Hilltribe Organics Limited",
+      "group_selection_rates": {
+        "female": 0.015394946909606954,
+        "male": 0.031040097699979646
+      },
+      "group_selected_counts": {
+        "female": 1215,
+        "male": 610
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.015645150790372694,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "446": {
+      "partner_id": "446",
+      "partner_name": "Cooperativa Agraria de Productores de Tara del Norte (CAPTN)",
+      "group_selection_rates": {
+        "female": 0.02298471908973417,
+        "male": 0.032719316100142476
+      },
+      "group_selected_counts": {
+        "female": 1814,
+        "male": 643
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.009734597010408307,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "384": {
+      "partner_id": "384",
+      "partner_name": "Kingsbridge Microfinance",
+      "group_selection_rates": {
+        "female": 0.0053217100428270955,
+        "male": 0.024374109505393853
+      },
+      "group_selected_counts": {
+        "female": 420,
+        "male": 479
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.019052399462566757,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "451": {
+      "partner_id": "451",
+      "partner_name": "Specific Union for Farmer Women in Jordan",
+      "group_selection_rates": {
+        "female": 0.010985530016978788,
+        "male": 0.03567066965194382
+      },
+      "group_selected_counts": {
+        "female": 867,
+        "male": 701
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.024685139634965034,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "301": {
+      "partner_id": "301",
+      "partner_name": "Ecoblock International",
+      "group_selection_rates": {
+        "female": 0.013899799802336485,
+        "male": 0.040759210258497866
+      },
+      "group_selected_counts": {
+        "female": 1097,
+        "male": 801
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.02685941045616138,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "160": {
+      "partner_id": "160",
+      "partner_name": "Hekima",
+      "group_selection_rates": {
+        "female": 0.01675071589670814,
+        "male": 0.018064319153266842
+      },
+      "group_selected_counts": {
+        "female": 1322,
+        "male": 355
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.0013136032565587014,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "357": {
+      "partner_id": "357",
+      "partner_name": "Alivio Capital",
+      "group_selection_rates": {
+        "female": 0.013937812016928106,
+        "male": 0.04406676165275799
+      },
+      "group_selected_counts": {
+        "female": 1100,
+        "male": 866
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.030128949635829884,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "459": {
+      "partner_id": "459",
+      "partner_name": "SGS Soluciones Patrimoniales",
+      "group_selection_rates": {
+        "female": 0.011340310686500595,
+        "male": 0.03653572155505801
+      },
+      "group_selected_counts": {
+        "female": 895,
+        "male": 718
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.02519541086855741,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "394": {
+      "partner_id": "394",
+      "partner_name": "Quang Binh Women Development Fund",
+      "group_selection_rates": {
+        "female": 0.02392235371632751,
+        "male": 0.008599633625076328
+      },
+      "group_selected_counts": {
+        "female": 1888,
+        "male": 169
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.015322720091251183,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "342": {
+      "partner_id": "342",
+      "partner_name": "Entrepreneurs du Monde - Anh Chi Em",
+      "group_selection_rates": {
+        "female": 0.017891082334456805,
+        "male": 0.01012619580704254
+      },
+      "group_selected_counts": {
+        "female": 1412,
+        "male": 199
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.007764886527414265,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "440": {
+      "partner_id": "440",
+      "partner_name": "Together Association for Development and Environment (TADE)",
+      "group_selection_rates": {
+        "female": 0.011644408403233572,
+        "male": 0.04513535518013434
+      },
+      "group_selected_counts": {
+        "male": 887,
+        "female": 919
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.03349094677690077,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "118": {
+      "partner_id": "118",
+      "partner_name": "Prisma Honduras",
+      "group_selection_rates": {
+        "female": 0.005891893261701427,
+        "male": 0.021982495420313455
+      },
+      "group_selected_counts": {
+        "male": 432,
+        "female": 465
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.01609060215861203,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "449": {
+      "partner_id": "449",
+      "partner_name": "Dr. Bronner's / Serendipalm",
+      "group_selection_rates": {
+        "female": 0.015040166240085147,
+        "male": 0.03999592916751476
+      },
+      "group_selected_counts": {
+        "male": 786,
+        "female": 1187
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.02495576292742961,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "229": {
+      "partner_id": "229",
+      "partner_name": "Entrepreneurs du Monde - Energy Microfranchises",
+      "group_selection_rates": {
+        "female": 0.007298345201591444,
+        "male": 0.01251780989212294
+      },
+      "group_selected_counts": {
+        "male": 246,
+        "female": 576
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.005219464690531495,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "218": {
+      "partner_id": "218",
+      "partner_name": "Strathmore University",
+      "group_selection_rates": {
+        "female": 0.006728161982717113,
+        "male": 0.013026663952778343
+      },
+      "group_selected_counts": {
+        "male": 256,
+        "female": 531
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.00629850197006123,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "381": {
+      "partner_id": "381",
+      "partner_name": "MicroLoan Foundation (MLF) Malawi",
+      "group_selection_rates": {
+        "female": 0.01934821722713565,
+        "male": 0.04142072053734989
+      },
+      "group_selected_counts": {
+        "male": 814,
+        "female": 1527
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.022072503310214237,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "40": {
+      "partner_id": "40",
+      "partner_name": "Grounded and Holistic Approach for People's Empowerment (GHAPE)",
+      "group_selection_rates": {
+        "female": 0.0074503940599579335,
+        "male": 0.024628536535721553
+      },
+      "group_selected_counts": {
+        "male": 484,
+        "female": 588
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.01717814247576362,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "288": {
+      "partner_id": "288",
+      "partner_name": "Babban Gona Farmers Organization",
+      "group_selection_rates": {
+        "female": 0.0065634423861534175,
+        "male": 0.07154488092814981
+      },
+      "group_selected_counts": {
+        "female": 518,
+        "male": 1406
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.0649814385419964,
+      "threshold": 0.05,
+      "meets_threshold": false
+    },
+    "450": {
+      "partner_id": "450",
+      "partner_name": "b-fit",
+      "group_selection_rates": {
+        "female": 0.008299333519170827,
+        "male": 0.017046611031956035
+      },
+      "group_selected_counts": {
+        "female": 655,
+        "male": 335
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.008747277512785208,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "359": {
+      "partner_id": "359",
+      "partner_name": "Vahatra",
+      "group_selection_rates": {
+        "female": 0.024593902840779502,
+        "male": 0.042285772440464074
+      },
+      "group_selected_counts": {
+        "male": 831,
+        "female": 1941
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.017691869599684572,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "392": {
+      "partner_id": "392",
+      "partner_name": "ASA Initiative",
+      "group_selection_rates": {
+        "female": 0.014812092952535414,
+        "male": 0.04248931406472624
+      },
+      "group_selected_counts": {
+        "female": 1169,
+        "male": 835
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.027677221112190824,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "162": {
+      "partner_id": "162",
+      "partner_name": "Turame Community Finance",
+      "group_selection_rates": {
+        "female": 0.016535313347355616,
+        "male": 0.033635253409322205
+      },
+      "group_selected_counts": {
+        "male": 661,
+        "female": 1305
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.01709994006196659,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "198": {
+      "partner_id": "198",
+      "partner_name": "Maya",
+      "group_selection_rates": {
+        "female": 0.01863865588809204,
+        "male": 0.03343171178506005
+      },
+      "group_selected_counts": {
+        "female": 1471,
+        "male": 657
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.014793055896968006,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "127": {
+      "partner_id": "127",
+      "partner_name": "EDESA",
+      "group_selection_rates": {
+        "female": 0.01160639618864195,
+        "male": 0.03597598208833706
+      },
+      "group_selected_counts": {
+        "female": 916,
+        "male": 707
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.024369585899695113,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "275": {
+      "partner_id": "275",
+      "partner_name": "ERES Energ\u00cd_a Renovable",
+      "group_selection_rates": {
+        "female": 0.012303286789488355,
+        "male": 0.03643395074292693
+      },
+      "group_selected_counts": {
+        "female": 971,
+        "male": 716
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.024130663953438575,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "108": {
+      "partner_id": "108",
+      "partner_name": "UIMCEC",
+      "group_selection_rates": {
+        "female": 0.021540254935252526,
+        "male": 0.03307551394260126
+      },
+      "group_selected_counts": {
+        "male": 650,
+        "female": 1700
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.011535259007348735,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "231": {
+      "partner_id": "231",
+      "partner_name": "Negros Women for Tomorrow Foundation (NWTF)",
+      "group_selection_rates": {
+        "female": 0.019855046755023947,
+        "male": 0.023203745165886424
+      },
+      "group_selected_counts": {
+        "female": 1567,
+        "male": 456
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.0033486984108624766,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "418": {
+      "partner_id": "418",
+      "partner_name": "Ghana Women Fund",
+      "group_selection_rates": {
+        "female": 0.01411520235168901,
+        "male": 0.024475880317524935
+      },
+      "group_selected_counts": {
+        "female": 1114,
+        "male": 481
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.010360677965835926,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "367": {
+      "partner_id": "367",
+      "partner_name": "Thrive Microfinance",
+      "group_selection_rates": {
+        "female": 0.019576290514685384,
+        "male": 0.05129248931406473
+      },
+      "group_selected_counts": {
+        "female": 1545,
+        "male": 1008
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.03171619879937934,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "294": {
+      "partner_id": "294",
+      "partner_name": "Negros Women for Tomorrow Foundation (NWTF)",
+      "group_selection_rates": {
+        "female": 0.015128861407465598,
+        "male": 0.03465296153063301
+      },
+      "group_selected_counts": {
+        "male": 681,
+        "female": 1194
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.019524100123167416,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "185": {
+      "partner_id": "185",
+      "partner_name": "National Microfinance Bank",
+      "group_selection_rates": {
+        "female": 0.00954106586249715,
+        "male": 0.03185426419702829
+      },
+      "group_selected_counts": {
+        "female": 753,
+        "male": 626
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.02231319833453114,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "397": {
+      "partner_id": "397",
+      "partner_name": "Burn Manufacturing",
+      "group_selection_rates": {
+        "female": 0.009693114720863637,
+        "male": 0.018267860777529003
+      },
+      "group_selected_counts": {
+        "female": 765,
+        "male": 359
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.008574746056665366,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "161": {
+      "partner_id": "161",
+      "partner_name": "Urwego Opportunity Bank",
+      "group_selection_rates": {
+        "female": 0.0103139808925268,
+        "male": 0.027121921432933033
+      },
+      "group_selected_counts": {
+        "female": 814,
+        "male": 533
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.016807940540406234,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "305": {
+      "partner_id": "305",
+      "partner_name": "Camfed Zimbabwe",
+      "group_selection_rates": {
+        "female": 0.02133752312409721,
+        "male": 0.03424587828210869
+      },
+      "group_selected_counts": {
+        "male": 673,
+        "female": 1684
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.012908355158011482,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "176": {
+      "partner_id": "176",
+      "partner_name": "MiCredito",
+      "group_selection_rates": {
+        "female": 0.013253592154278909,
+        "male": 0.01389171585589253
+      },
+      "group_selected_counts": {
+        "female": 1046,
+        "male": 273
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.0006381237016136205,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "402": {
+      "partner_id": "402",
+      "partner_name": "Programme d'Appui aux Initiatives de D\u00cd\u00a9veloppement Economique au Kivu (PAIDEK)",
+      "group_selection_rates": {
+        "female": 0.022832670231367678,
+        "male": 0.02132098514146143
+      },
+      "group_selected_counts": {
+        "female": 1802,
+        "male": 419
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.0015116850899062478,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "285": {
+      "partner_id": "285",
+      "partner_name": "Jerusalem Interest-Free Microfinance Fund",
+      "group_selection_rates": {
+        "female": 0.005486429639390791,
+        "male": 0.02427233869326277
+      },
+      "group_selected_counts": {
+        "male": 477,
+        "female": 433
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.01878590905387198,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "246": {
+      "partner_id": "246",
+      "partner_name": "ADICLA",
+      "group_selection_rates": {
+        "female": 0.009034236334608854,
+        "male": 0.030887441481783025
+      },
+      "group_selected_counts": {
+        "male": 607,
+        "female": 713
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.02185320514717417,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "15": {
+      "partner_id": "15",
+      "partner_name": "South Pacific Business Development (SPBD) - Samoa",
+      "group_selection_rates": {
+        "female": 0.03706190922683156,
+        "male": 0.026002442499491147
+      },
+      "group_selected_counts": {
+        "female": 2925,
+        "male": 511
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.01105946672734041,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "205": {
+      "partner_id": "205",
+      "partner_name": "Al-Amal Microfinance Bank",
+      "group_selection_rates": {
+        "female": 0.009236968145764171,
+        "male": 0.03017504579686546
+      },
+      "group_selected_counts": {
+        "male": 593,
+        "female": 729
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.02093807765110129,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "120": {
+      "partner_id": "120",
+      "partner_name": "Asociaci\u00cd_n Alternativa Para el Desarrollo Integral de las Mujeres (ADIM)",
+      "group_selection_rates": {
+        "female": 0.01372240946757558,
+        "male": 0.008497862812945248
+      },
+      "group_selected_counts": {
+        "male": 167,
+        "female": 1083
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.005224546654630333,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "484": {
+      "partner_id": "484",
+      "partner_name": "Cooperativa de Ahorro y Cr\u00cd\u00a9dito Norandino",
+      "group_selection_rates": {
+        "female": 0.023643597475988952,
+        "male": 0.031803378790962754
+      },
+      "group_selected_counts": {
+        "female": 1866,
+        "male": 625
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.008159781314973802,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "363": {
+      "partner_id": "363",
+      "partner_name": "M7 Microfinance Institution",
+      "group_selection_rates": {
+        "female": 0.01580041053191759,
+        "male": 0.010940362304091187
+      },
+      "group_selected_counts": {
+        "female": 1247,
+        "male": 215
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.004860048227826404,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "380": {
+      "partner_id": "380",
+      "partner_name": "Fonkoze - Zaf\u00cd\u00cen",
+      "group_selection_rates": {
+        "female": 0.01155571323585312,
+        "male": 0.03292285772440464
+      },
+      "group_selected_counts": {
+        "male": 647,
+        "female": 912
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.02136714448855152,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "263": {
+      "partner_id": "263",
+      "partner_name": "Nazava Water Filters",
+      "group_selection_rates": {
+        "female": 0.0024074402574694002,
+        "male": 0.016792184001628335
+      },
+      "group_selected_counts": {
+        "male": 330,
+        "female": 190
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.014384743744158934,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "309": {
+      "partner_id": "309",
+      "partner_name": "African Solar Rise",
+      "group_selection_rates": {
+        "female": 0.010605407871062568,
+        "male": 0.009261143903928354
+      },
+      "group_selected_counts": {
+        "male": 182,
+        "female": 837
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.0013442639671342148,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "390": {
+      "partner_id": "390",
+      "partner_name": "Soluz Honduras",
+      "group_selection_rates": {
+        "female": 0.002812903879780036,
+        "male": 0.01928556889883981
+      },
+      "group_selected_counts": {
+        "male": 379,
+        "female": 222
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.016472665019059776,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "435": {
+      "partner_id": "435",
+      "partner_name": "Fondesurco",
+      "group_selection_rates": {
+        "female": 0.024429183244215807,
+        "male": 0.03607775290046815
+      },
+      "group_selected_counts": {
+        "male": 709,
+        "female": 1928
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.011648569656252342,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "365": {
+      "partner_id": "365",
+      "partner_name": "Nke-Anyi Farmers Multipurpose Cooperative Society",
+      "group_selection_rates": {
+        "female": 0.010440688274498872,
+        "male": 0.032057805821290454
+      },
+      "group_selected_counts": {
+        "female": 824,
+        "male": 630
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.021617117546791582,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "406": {
+      "partner_id": "406",
+      "partner_name": "KSPPS Benteng Mikro Indonesia",
+      "group_selection_rates": {
+        "female": 0.005537112592179621,
+        "male": 0.0056482800732749845
+      },
+      "group_selected_counts": {
+        "male": 111,
+        "female": 437
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.00011116748109536376,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "295": {
+      "partner_id": "295",
+      "partner_name": "PAC",
+      "group_selection_rates": {
+        "female": 0.0036618433389929298,
+        "male": 0.010889476898025646
+      },
+      "group_selected_counts": {
+        "female": 289,
+        "male": 214
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.007227633559032716,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "97": {
+      "partner_id": "97",
+      "partner_name": "FAPE",
+      "group_selection_rates": {
+        "female": 0.005093636755277363,
+        "male": 0.015367392631793202
+      },
+      "group_selected_counts": {
+        "male": 302,
+        "female": 402
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.010273755876515838,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "372": {
+      "partner_id": "372",
+      "partner_name": "Wedu",
+      "group_selection_rates": {
+        "female": 0.0024074402574694002,
+        "male": 0.0053938530429472826
+      },
+      "group_selected_counts": {
+        "female": 190,
+        "male": 106
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.0029864127854778823,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "96": {
+      "partner_id": "96",
+      "partner_name": "Fundaci\u00cd_n Le\u00cd_n 2000",
+      "group_selection_rates": {
+        "female": 0.005676490712348901,
+        "male": 0.006564217382454712
+      },
+      "group_selected_counts": {
+        "female": 448,
+        "male": 129
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.0008877266701058104,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "201": {
+      "partner_id": "201",
+      "partner_name": "Organizacion de Desarrollo Empresarial Femenino (ODEF)",
+      "group_selection_rates": {
+        "female": 0.00457413648919186,
+        "male": 0.022135151638510077
+      },
+      "group_selected_counts": {
+        "female": 361,
+        "male": 435
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.017561015149318217,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "279": {
+      "partner_id": "279",
+      "partner_name": "TECNOSOL",
+      "group_selection_rates": {
+        "female": 0.0029396112617521095,
+        "male": 0.01002442499491146
+      },
+      "group_selected_counts": {
+        "male": 197,
+        "female": 232
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.00708481373315935,
+      "threshold": 0.05,
+      "meets_threshold": true
+    },
+    "219": {
+      "partner_id": "219",
+      "partner_name": "Rekan Usaha Mikro Anda (Ruma)",
+      "group_selection_rates": {
+        "female": 0.000684219862649198,
+        "male": 0.011398330958681051
+      },
+      "group_selected_counts": {
+        "female": 54,
+        "male": 224
+      },
+      "group_query_counts": {
+        "female": 78922,
+        "male": 19652
+      },
+      "selection_rate_gap": 0.010714111096031853,
+      "threshold": 0.05,
+      "meets_threshold": true
+    }
+  },
+  "threshold": 0.05,
+  "loan_lists_evaluated": 98655,
+  "raw_violation_count": 29,
+  "raw_violation_rate": 0.14285714285714285,
+  "partners_compared": 203,
+  "guardrail_status": "measurement_only_not_enforced",
+  "note": "For each partner, selection rates are compared across loan groups.",
+  "reranking": {
+    "minimum_k": 10,
+    "eval_batch_size": 10,
+    "variance_threshold": 0.0025,
+    "average_stopped_at": 10.0,
+    "maximum_stopped_at": 10,
+    "average_final_variance": null,
+    "early_stop_lists": 0,
+    "lists_evaluated": 98655,
+    "status": "reranking_disabled_for_query_level_attributes"
+  }
+}

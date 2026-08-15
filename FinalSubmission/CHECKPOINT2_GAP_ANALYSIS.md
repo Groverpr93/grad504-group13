@@ -17,15 +17,18 @@ should compare both teams' model-plus-evaluation results.
 - Separated model evaluation from training.
 - Added AUC, average precision, Hits@5, and NDCG@5/@10/@15/@20.
 - Added partner-level gender exposure analysis with per-partner group rates.
+- Completed a 50-epoch full-data run and separate model evaluation.
+- Excluded unknown-gender records from the protected-group comparison while
+  reporting their count separately.
 - Excluded region from the fairness benchmark because partner geography confounds regional comparisons.
 - Added a notebook that visualizes the graph and link-prediction objective.
 
 ## Still pending
 
 - Obtain the other team's final model/evaluation results and add a concise comparison table.
-- Add an actual fairness-aware reranking/guardrail layer; current fairness output is measurement-only.
-- Measure guardrail adherence/violation rate after the guardrail is active.
-- Run the full selected epoch/data experiment and replace one-epoch placeholders.
+- Run the new inference-time gender guardrail and measure guarded ranking quality.
+- Report guardrail adherence/violation rate after the guarded full evaluation.
+- Add the full-run runtime and throughput measurements.
 - Report runtime, inference latency, throughput, and memory/scalability behavior.
 - Add a random or popularity baseline so AUC/NDCG results have context.
 - Document peer-review feedback and the resulting design change.

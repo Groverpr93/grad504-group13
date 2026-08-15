@@ -110,11 +110,16 @@ def fairness_metrics(scored, test_rows, attribute, cutoff=5, threshold=.05):
     row_lookup = {row["loan"]: row for row in test_rows}
     partner_names = {row["partner"]: row.get("partner_name", "unknown")
                      for row in test_rows}
+    protected_groups = {"female", "male"}
     group_query_count = defaultdict(int)
+    unknown_query_count = 0
     partner_group_selected = defaultdict(lambda: defaultdict(int))
     for loan, values in scored.items():
         # The query is a loan; its protected attribute labels this query group.
         group = row_value(row_lookup[loan], attribute)
+        if group not in protected_groups:
+            unknown_query_count += 1
+            continue
         ranked = sorted(values, key=lambda item: item[2], reverse=True)
         group_query_count[group] += 1
         for partner, _, _ in ranked[:cutoff]:
@@ -151,6 +156,8 @@ def fairness_metrics(scored, test_rows, attribute, cutoff=5, threshold=.05):
     violations = sum(g > threshold for g in partner_gaps)
     return {"attribute": attribute, "cutoff": cutoff,
             "group_query_counts": dict(group_query_count),
+            "unknown_query_count": unknown_query_count,
+            "protected_groups": sorted(protected_groups),
             "selection_rate_gap": weighted_gap,
             "average_partner_gap": average_gap,
             "weighted_partner_gap": weighted_gap,
@@ -168,6 +175,57 @@ def fairness_metrics(scored, test_rows, attribute, cutoff=5, threshold=.05):
             "partners_compared": len(partner_gaps),
             "guardrail_status": "measurement_only_not_enforced",
             "note": "For each partner, selection rates are compared across loan groups."}
+
+
+def apply_gender_guardrail(scored, test_rows, cutoff=10, penalty=1.0):
+    """Rerank each loan's slate while balancing partner exposure by gender.
+
+    Loans are processed in alternating gender order.  When choosing a partner
+    for a loan, the score is reduced when that partner is already over-exposed
+    for the loan's gender relative to the other gender.  This is an inference
+    policy only; it does not update GNN weights.  The resulting fairness audit
+    remains the source of truth because candidate availability can prevent a
+    perfect 5% gap.
+    """
+    rows = {row["loan"]: row for row in test_rows}
+    by_group = defaultdict(list)
+    for loan in scored:
+        group = row_value(rows[loan], "gender")
+        if group in {"female", "male"}:
+            by_group[group].append(loan)
+    # Alternate groups so one group is not processed entirely before the other.
+    ordered_loans = []
+    for index in range(max((len(items) for items in by_group.values()), default=0)):
+        for group in ("female", "male"):
+            if index < len(by_group[group]):
+                ordered_loans.append(by_group[group][index])
+    selected_by_loan = {}
+    selected_counts = defaultdict(lambda: defaultdict(int))
+    processed = defaultdict(int)
+    for loan in ordered_loans:
+        group = row_value(rows[loan], "gender")
+        chosen = []
+        remaining = list(scored[loan])
+        while remaining and len(chosen) < cutoff:
+            other_group = "male" if group == "female" else "female"
+            def adjusted(item):
+                partner, _, score = item
+                own_rate = selected_counts[group][partner] / max(1, processed[group])
+                other_rate = selected_counts[other_group][partner] / max(1, processed[other_group])
+                return score - penalty * max(0.0, own_rate - other_rate)
+            best = max(remaining, key=adjusted)
+            remaining.remove(best)
+            chosen.append((best[0], best[1], adjusted(best)))
+        selected_by_loan[loan] = chosen
+        for partner, _, _ in chosen:
+            selected_counts[group][partner] += 1
+        processed[group] += 1
+    # Keep records with unknown gender in the output, but do not use them to
+    # set protected-group exposure targets.
+    for loan, values in scored.items():
+        if loan not in selected_by_loan:
+            selected_by_loan[loan] = sorted(values, key=lambda item: item[2], reverse=True)[:cutoff]
+    return selected_by_loan
 
 
 def rerank_until_variance(scored_values, test_rows, attribute, minimum_k=10,
@@ -201,6 +259,8 @@ def main():
                         help="Additional candidates inspected per inference batch")
     parser.add_argument("--variance-threshold", type=float, default=.0025,
                         help="Maximum group selection-rate variance for early stopping")
+    parser.add_argument("--guardrail-penalty", type=float, default=1.0,
+                        help="Inference score penalty per unit of gender exposure imbalance")
     parser.add_argument("--seed", type=int, default=50413)
     args = parser.parse_args()
 
@@ -217,7 +277,8 @@ def main():
     scored = score_candidates(checkpoint, grouped)
 
     model_result = ranking_metrics(scored)
-    model_result.update({"test_loans": len(test_rows), "epochs_in_checkpoint": checkpoint.get("epochs")})
+    model_result.update({"test_loans": len(test_rows), "epochs_in_checkpoint": checkpoint.get("epochs"),
+                         "evaluation_stage": "raw_gnn_scores_before_guardrail"})
     args.model_results.parent.mkdir(parents=True, exist_ok=True)
     args.model_results.write_text(json.dumps(model_result, indent=2), encoding="utf-8")
 
@@ -230,30 +291,27 @@ def main():
     # because partners operate in specific geographies, making region gaps a
     # partner-eligibility effect rather than a clean fairness comparison.
     for attribute in ("gender",):
-        result = fairness_metrics(scored, test_rows, attribute,
-                                  cutoff=max(10, args.minimum_k))
-        # Run inference-time reranking separately from the raw model metrics.
-        rerank_stats = []
+        cutoff = max(10, args.minimum_k)
+        raw_result = fairness_metrics(scored, test_rows, attribute, cutoff=cutoff)
+        # Apply the inference-only gender guardrail to the final top-k slate.
+        guarded_scored = apply_gender_guardrail(scored, test_rows, cutoff=cutoff,
+                                                penalty=args.guardrail_penalty)
+        result = fairness_metrics(guarded_scored, test_rows, attribute, cutoff=cutoff)
+        result["raw_fairness"] = raw_result
+        result["guardrail_status"] = "enforced_inference_reranking"
+        result["guardrail_violation_rate"] = result["raw_violation_rate"]
         recommendations = {}
-        for partner, values in scored.items():
-            selected, stats = rerank_until_variance(
-                values, test_rows, attribute, args.minimum_k,
-                args.eval_batch_size, args.variance_threshold)
-            rerank_stats.append(stats)
-            recommendations[partner] = [
+        for loan, values in guarded_scored.items():
+            recommendations[loan] = [
                 {"partner_id": item[0], "partner_name": partner_names.get(item[0], "unknown")}
-                for item in selected]
+                for item in values[:cutoff]]
         result["reranking"] = {
             "minimum_k": max(10, args.minimum_k),
             "eval_batch_size": args.eval_batch_size,
             "variance_threshold": args.variance_threshold,
-            "average_stopped_at": (sum(item["stopped_at"] for item in rerank_stats) /
-                                    len(rerank_stats) if rerank_stats else 0),
-            "maximum_stopped_at": max((item["stopped_at"] for item in rerank_stats), default=0),
-            "average_final_variance": None,
-            "early_stop_lists": 0,
-            "lists_evaluated": len(rerank_stats),
-            "status": "reranking_disabled_for_query_level_attributes",
+            "guardrail_penalty": args.guardrail_penalty,
+            "lists_evaluated": len(guarded_scored),
+            "status": "active_gender_exposure_balancing",
         }
         fairness_result[attribute] = result
         reranked_recommendations[attribute] = recommendations
@@ -263,7 +321,8 @@ def main():
     # Save a compact inference audit instead of printing every recommendation.
     inference_output = {"settings": {"minimum_k": max(10, args.minimum_k),
                                       "eval_batch_size": args.eval_batch_size,
-                                      "variance_threshold": args.variance_threshold},
+                                      "variance_threshold": args.variance_threshold,
+                                      "guardrail_penalty": args.guardrail_penalty},
                         "summary": {attribute: result["reranking"]
                                     for attribute, result in fairness_result.items()},
                         "recommendations": reranked_recommendations}
@@ -285,7 +344,7 @@ def main():
                    "selection_gap_met": result["selection_rate_gap"] <= .05,
                    "raw_violation_rate": result["raw_violation_rate"],
                    "reranking": result["reranking"],
-                   "guardrail_violation_rate": None,
+                   "guardrail_violation_rate": result["guardrail_violation_rate"],
                    "guardrail_status": result["guardrail_status"]}
                    for attribute, result in fairness_result.items()}}
     args.summary_file.parent.mkdir(parents=True, exist_ok=True)
