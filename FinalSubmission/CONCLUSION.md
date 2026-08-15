@@ -1,0 +1,9 @@
+# Conclusion
+
+In this work, we developed and evaluated a fairness-aware Graph Neural Network (GNN) recommendation system designed to match new Kiva micro-loan applications with historical local field partners. By integrating transactional loan data with granular geographic, subnational Multidimensional Poverty Index (MPI), and country-level economic indicators, the system learns high-fidelity representations of loans and partners through a custom, lightweight Graph Convolutional Network (GCN) architecture. 
+
+Our experimental design addressed key real-world deployment challenges by adopting a strict chronological split (70/15/15) to perform an out-of-time evaluation. On this realistic test set of 98,655 future loan queries, the GNN model achieved excellent link prediction performance, yielding an Area Under the ROC Curve (AUC) of **0.9851** and a Normalized Discounted Cumulative Gain (NDCG@5) of **0.8804** (exceeding the class target of 0.80). 
+
+Crucially, our work demonstrates that recommendation accuracy does not have to be sacrificed to ensure algorithmic equity. By applying a post-processing gender exposure guardrail at inference time, we successfully reduced the weighted gender selection rate gap from **4.39%** to **3.89%** and increased the percentage of partners passing the 5% fairness threshold from **85.71% to 87.68%**—all while maintaining or slightly improving ranking metrics. 
+
+Finally, our scalability analysis confirms the feasibility of deploying this model as a low-latency batch recommendation service. Serving recommendations from a fast in-memory feature store of frozen embeddings and updating graph snapshots on a daily or weekly cadence provides sub-second latency while keeping computation lightweight. Ultimately, this project proves that GNNs can serve as highly effective, scalable, and socially responsible tools for matching capital to micro-borrowers worldwide.
